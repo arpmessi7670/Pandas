@@ -1,0 +1,17 @@
+# Create a DataFrame from List
+
+# Import necessary library
+import pandas as pd
+
+# Define a function 'createDataframe' that will return a DataFrame corresponding to a list as input
+def createDataframe(student_data):
+    return pd.DataFrame(student_data, columns = ["student_id","age"])
+
+# List input
+student_data=[[1,15],[2,11],[3,11],[4,20]]
+
+# Call the user-defined function that will return a DataFrame
+df = createDataframe(student_data)
+
+# Print the created DataFrame
+print(df)
